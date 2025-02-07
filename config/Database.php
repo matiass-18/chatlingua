@@ -8,7 +8,7 @@ class Database {
             $this->conexion = new PDO(
                 "mysql:host=localhost;dbname=chatlingua",
                 "root",  
-                "[Nomeacuerd0]",     
+                "",     
                 array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
             );
             $this->conexion->exec("SET NAMES 'utf8'");
