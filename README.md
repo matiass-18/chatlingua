@@ -15,35 +15,42 @@
 
 ## 📂 Estructura del Proyecto
 
-📦 Chatlingua
- ┣ 📂 assets                # Archivos estáticos (CSS y JS) 
- ┃ ┣ 📂 css                 # Hojas de estilo
- ┃ ┃ ┗ 📜 styles.css        # Archivo de estilos principal
- ┃ ┣ 📂 js                  # Archivos JavaScript
- ┃ ┃ ┗ 📜 chat.js           # Lógica de interacción en el chat
- ┣ 📂 config                # Configuración del proyecto
- ┃ ┣ 📜 Database.php        # Conexión a la base de datos
- ┃ ┣ 📜 Mailer.php          # Configuración de PHPMailer para envío de correos
- ┣ 📂 controllers           # Controladores (manejan la lógica de negocio)
- ┃ ┣ 📜 ChatController.php  # Controlador del chat
- ┃ ┣ 📜 UsuarioController.php  # Controlador de usuarios (registro, login, etc.)
- ┣ 📂 models                # Modelos de la base de datos
- ┃ ┣ 📜 Mensaje.php         # Modelo de mensajes del chat
- ┃ ┣ 📜 Usuario.php         # Modelo de usuarios
- ┣ 📂 uploads               # Carpeta para almacenar archivos subidos por usuarios
- ┣ 📂 vendor                # Dependencias instaladas con Composer
- ┃ ┣ 📂 composer            # Archivos internos de Composer
- ┃ ┣ 📂 phpmailer\phpmailer # Librería PHPMailer para envío de correos
- ┃ ┣ 📜 autoload.php        # Autoload de Composer para cargar dependencias
- ┣ 📂 views                 # Vistas (Interfaz de usuario en PHP)
- ┃ ┣ 📜 chat.php            # Página principal del chat
- ┃ ┣ 📜 login.php           # Página de inicio de sesión
- ┃ ┣ 📜 recuperar.php       # Página para recuperar contraseña
- ┃ ┣ 📜 registro.php        # Página de registro de usuarios
- ┃ ┣ 📜 restablecer.php     # Página para restablecer la contraseña
- ┣ 📜 composer.json         # Archivo de configuración de Composer
- ┣ 📜 composer.lock         # Archivo de control de versiones de dependencias
- ┣ 📜 index.php             # Archivo de inicio del proyecto
+📂 Chatlingua
+│── 📂 assets                # Archivos estáticos (CSS, JS)
+│   ├── 📂 css               # Hojas de estilo
+│   │   └── 📄 styles.css    # Archivo de estilos principal
+│   ├── 📂 js                # Archivos JavaScript
+│       └── 📄 chat.js       # Lógica de interacción en el chat
+│
+│── 📂 config                # Configuración del proyecto
+│   ├── 📄 Database.php      # Conexión a la base de datos
+│   ├── 📄 Mailer.php        # Configuración de PHPMailer
+│
+│── 📂 controllers           # Controladores (Lógica de negocio)
+│   ├── 📄 ChatController.php       # Controlador del chat
+│   ├── 📄 UsuarioController.php    # Controlador de usuarios (registro, login, etc.)
+│
+│── 📂 models                # Modelos de la base de datos
+│   ├── 📄 Mensaje.php       # Modelo de mensajes del chat
+│   ├── 📄 Usuario.php       # Modelo de usuarios
+│
+│── 📂 uploads               # Carpeta para almacenar archivos subidos por usuarios
+│
+│── 📂 vendor                # Dependencias instaladas con Composer
+│   ├── 📂 composer          # Archivos internos de Composer
+│   ├── 📂 phpmailer         # Librería PHPMailer para envío de correos
+│   └── 📄 autoload.php      # Autoload de Composer para cargar dependencias
+│
+│── 📂 views                 # Vistas (Interfaz de usuario en PHP)
+│   ├── 📄 chat.php          # Página principal del chat
+│   ├── 📄 login.php         # Página de inicio de sesión
+│   ├── 📄 recuperar.php     # Página para recuperar contraseña
+│   ├── 📄 registro.php      # Página de registro de usuarios
+│   └── 📄 restablecer.php   # Página para restablecer la contraseña
+│
+│── 📄 composer.json         # Archivo de configuración de Composer
+│── 📄 composer.lock         # Archivo de control de versiones de Composer
+│── 📄 index.php             # Archivo de inicio del proyecto
 
 🔧 Requisitos previos
 Antes de empezar, asegúrate de tener instalados los siguientes programas en tu sistema:
